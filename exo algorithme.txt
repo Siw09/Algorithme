@@ -1,0 +1,1084 @@
+                                                                             STRUCTURE DE CONTROLE 
+                                                                             
+
+
+Exo1
+
+ Algorithme    maximum
+
+ Var
+	A,B: entiers;
+
+Debut
+
+Afficher" veuiller entrer deux réels de votre choix ";
+Saisir A,B;
+ si A>B alors 
+Afficher " le plus grand est ",A;
+ Finsi
+si B>A alors 
+Afficher "Le plus grabd est ",B;
+ Finsi
+Fin
+
+
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+Exo2
+
+
+Algorithme    message_mineurs;
+
+ Var
+	age,an_naissance: entiers;
+
+Debut
+
+Afficher" veuiller entrer votre année de naissance";
+Saisir an_naissance;
+
+age <——— 2022 - an_naissance;
+ si age<10 alors 
+Afficher " bel âge ";
+ Finsi
+Fin
+
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+Exo 3
+
+ Algorithme    maximum
+ Var
+	A,B,: entiers;
+
+Debut
+
+Afficher" veuiller entrer deux réels de votre choix ";
+Saisir A,B;
+ si A>B alors 
+Afficher " le plus grand est ",A;
+sinon si B>A
+ Afficher "Le plus grand est ",B;
+ Finsi
+Fin
+
+
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+
+Exo4
+
+ Algorithme    valeur_absolue
+
+ Var
+	A,B,X: réels;
+
+Debut
+
+Afficher" veuiller entrer deux réels de votre choix ";
+Saisir A,B;
+
+X <—— A-B;
+ si X>=0 alors 
+Afficher " la valeur absolue de ", A," ",-B," =",X;
+sinon
+Afficher "la valeur absolue de ", A," ",-B," =",-X;
+ Finsi
+Fin
+
+
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+
+Exo5
+
+Algorithme    couleur_action ;
+
+ Var
+	coulor: chaine de caractères;
+
+Debut
+
+Afficher" veuiller entrer la couleur actuelle du feu de signalisation ";
+Saisir coulor;
+
+ si color=rouge alors 
+   Afficher " arreter";
+   sinon
+     si color=jaune ou color=orange alors 
+	Afficher "ralentir";
+	sinon	
+	   si color=vert alors 
+	      afficher" passer";
+	      sinon
+		  afficher " coleur invalide ";
+	   finsi	
+
+     finsi
+ Finsi
+Fin
+
+
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+
+Exo6
+
+ Algorithme    resolution_equation
+
+ Var
+	A,B,X: réels;
+
+Debut
+
+Afficher" veuiller entrer deux réels de votre choix ";
+Saisir A,B;
+ si A<>0 alors 
+  Afficher " la solution de l'équation " ,A,"X+",B," =0 est X=", -B/A;
+  sinon
+    Afficher "L'équation " ,A,"X+",B," =0 n'admet pas de solution";
+ Finsi
+Fin
+
+
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+Exo7
+
+
+Algorithme                   maximum_entre_trois_entiers
+
+
+Var
+	A,B,C,max,egal1,egal2:entiers;
+
+debut
+
+Afficher" veuiller entrer trois entiers de votre choix ";
+Saisir A,B,C;
+
+si A>B alors
+  max <—— A ;
+sinon
+  si B>A alors
+    max <—— B ;
+  sinon
+   egal1 <—— A;
+  FinSi
+FinSi
+
+si max > C alors
+  afficher " le plus grand des trois entiers est ", max;
+sinon
+     si C> max alors 
+        afficher " le plus grand des trois entiers est ",C;
+     sinon
+     egal2 <——  C ;
+     FinSi
+FinSi 
+
+Si egal1 > egal2 alors 
+   afficher " le plus grand des trois entiers est ", egal1;
+sinon
+     si egal2 > egal1 alors 
+       afficher " le plus grand des trois entiers est ", egal2;
+     sinon
+      afficher " les trois entiers sont égaux ";
+     FinSi
+FinSi
+
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+
+
+Exo8
+
+Algorithme    couleur_action ;
+
+ Var
+	coulor: chaine de caractères;
+
+Debut
+
+Afficher" veuiller entrer la couleur actuelle du feu de signalisation ";
+Saisir coulor;
+
+ suivant  color faire:
+   rouge: 
+      Afficher " arreter";
+  jaune ou orange:
+      Afficher "ralentir";
+  vert: 
+      Afficher" passer";
+  sinon:
+		  afficher " coleur invalide ";
+ Finsuivant
+Fin
+
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+
+
+Exo9
+
+Algorithme                 menu_operations
+
+
+Var
+  A,B,C,max,min,egal1,egal2,egal3,egal4,operation:entiers;
+
+Debut
+  
+Afficher" veuiller entrer trois entiers de votre choix";
+Saisir A,B,C;
+
+Afficher" Les opérations possibles sont: 1) Somme , 2)  Produit , 3) Moyenne , ";
+
+Afficher" Veuillez entrer le numéro correspondant à l'opération de votre choix "
+
+Saisir operation;
+
+suivant operation faire 
+
+1: Afficher" La somme des trois entiers donne: " ,A+B+C;
+2: Afficher" Le produit des trois entiers donne: " , A*B*C;
+3: Afficher" La moyenne des trois entiers donne: " , ( A+B+C)/3;
+
+sinon
+Afficher" opération invalide";
+
+FinSuivant
+
+si A>B alors
+  max <—— A ;
+sinon
+  si B>A alors
+    max <—— B ;
+  sinon
+   egal1 <—— A;
+  FinSi
+FinSi
+
+si max > C alors
+  afficher " le plus grand des trois entiers est ", max;
+sinon
+     si C> max alors 
+        afficher " le plus grand des trois entiers est ",C;
+     sinon
+     egal2 <——  C ;
+     FinSi
+FinSi 
+
+Si egal1 > egal2 alors 
+   afficher " le plus grand des trois entiers est ", egal1;
+sinon
+     si egal2 > egal1 alors 
+       afficher " le plus grand des trois entiers est ", egal2;
+     sinon
+      afficher " les trois entiers sont égaux ";
+     FinSi
+FinSi
+
+
+   
+
+si A<B alors
+  min <—— A ;
+sinon
+  si B<A alors
+    min<—— B ;
+  sinon
+   egal3 <—— A;
+  FinSi
+FinSi
+
+si min < C alors
+  afficher " le plus petit des trois entiers est ", min;
+sinon
+     si C < min alors 
+        afficher " le plus petit des trois entiers est ",C;
+     sinon
+     egal4 <——  C ;
+     FinSi
+FinSi 
+
+Si egal3 < egal4 alors 
+   afficher " le plus petit des trois entiers est ", egal3;
+sinon
+     si egal4 < egal3 alors 
+       afficher " le plus petit des trois entiers est ", egal4;
+     sinon
+      afficher " les trois entiers sont égaux ";
+     FinSi
+FinSi
+
+
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+
+
+
+Exo10
+
+Algorithme                 somme
+
+Var
+	somme,i: entiers;
+
+Debut
+
+ Tanque i<= 10 faire
+  
+    somme <—— somme + i ;
+  i <—— i+1
+ Fintanque
+
+Afficher" la somme des 10 premier entiers donne " , somme;
+
+Fin
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+
+
+Exo11
+
+
+Algorithme             zzzzz
+
+
+Var
+	nom:chaine de caractères;
+
+	i : entier;
+
+Debut 
+
+Afficher" Veuillez saisir un nom";
+Saisir nom;
+i<—— 1;
+ 
+Tanque nom<>"zzzzz"
+ Afficher" Nom invalide";
+Afficher" Veuillez resaisir un autre  nom";
+Saisir nom;
+ i<—— i+1 ;
+FinTanque 
+
+Afficher" bravo vous avez réussi après",i," essaie";
+
+Fin 
+
+
+
+
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+
+Exo12
+
+
+Algorithme            questionnement
+
+
+Var
+	reponse:chaine de caractères;
+ 
+
+Debut 
+
+Afficher" Aimez-vous l'informatique ?";
+Afficher" répondez juste par oui ou par non ";
+Saisir reponse;
+ 
+Tanque reponse<>"oui" ou reponse<>"non"
+ Afficher" reponse invalide";
+Afficher" Aimez-vous l'informatique ?";
+Afficher" répondez juste par oui ou par non ";
+Saisir reponse;
+FinTanque 
+
+Si reponse="oui"alors
+   Afficher"Génial ";
+sinon 
+   Afficher" Dommage";
+FinSI
+
+Fin 
+
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+
+
+Exo13
+
+
+Algorithme            questionnement
+
+
+Var
+	reponse:chaine de caractères;
+ 
+
+Debut 
+ 
+Repeter
+si reponse<>null et reponse<>"oui" ou reponse<>"non" alors
+ Afficher" reponse invalide";
+FinSi
+Afficher" Aimez-vous l'informatique ?";
+Afficher" répondez juste par oui ou par non ";
+Saisir reponse;
+Jusqu'à reponse="oui" ou reponse="non" 
+
+Si reponse="oui"alors
+   Afficher"Génial ";
+sinon 
+   Afficher" Dommage";
+FinSI
+
+Fin 
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+
+
+
+
+Exo14          saisir_nombre
+
+Var
+	nombre,somme:entiers;
+
+Debut
+
+Repeter
+si somme=0 alors
+  Afficher"Veuillez sasir une suite de nombre entiers dont la somme est supérieur ou égale à 100";
+  Saisir nombre;
+sinon
+  Afficher" Veuillez entrer à nouveau un nombre"
+  Saisir nombre;
+FinSi
+ 
+somme<—— somme+nombre;
+
+Jusqu'à somme>= 100
+
+Afficher" bravo vous avez réussi";
+
+Fin
+
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+
+
+Exo15             somme_dix_premiers;
+
+Var
+	somme,i:entiers;
+Debut
+
+Pour i ——> 1 à 10 
+ somme <—— somme+i;
+
+FinPour
+Afficher"  La somme des 10 Premiers nombres donne",somme;
+
+Fin
+
+
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+
+Exo16  
+
+Algorithme              table_8
+
+Var
+	i:entiers
+
+Debut
+
+Afficher" voici la table de 8:";
+
+Pour i——> 0 à 12
+
+Afficher"8*",i,"=",8*i;
+FinPour
+
+Fin
+
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+Exo17  
+
+Algorithme              table_1_a_10;
+
+Var
+	i,j:entiers;
+
+Debut
+
+Afficher" voici les 10 tables  de 10:";
+
+Pour i——> 1 à 10
+    Afficher" Table de ",i;
+
+    Pour j——> 0 à 12
+     Afficher i,"*",j,"=",i*j;
+    FinPour
+ Afficher"
+          -";
+FinPour
+
+Fin
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+
+
+Exo18                       factoriel;
+
+
+Var
+	fac,i,nombre:entiers;
+
+Debut
+
+ Afficher"veuillez saisir un nombre dont vous désirez connaitre le factoriel";
+Saisir nombre;
+
+fac <—— 1;
+ 
+Si nombre >0 alors
+
+Pour i ——> 1 nombre
+
+fac <—— fac*i;
+
+FinPour
+
+sinon 
+    si nombre=0
+     fac <—— 1;
+       sinon
+       fac <—— 0 ;
+    Finsi
+FinSi
+
+si fac <> 0 alors 
+  Afficher" Le factoriel de ", nombre, " donne", fac;
+ sinon 
+Afficher nombre," N'est pas pris en charge";
+
+FinSi
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+
+
+Exo19                    pgcd_de_deux_nombres;
+
+
+
+Var
+	A,B,C,D,E,pgcd:entiers;
+
+
+Debut 
+
+Afficher" Veuillez saisir deux entiers dont vous désirez connaitre le pgcd";
+
+Saisir A,B;
+
+Si A >= 0 alors 
+  C <—— A ;
+ sinon
+  C <—— -A;
+FinSi
+Si B >= 0 alors 
+  D <—— B;
+ sinon
+  D <—— -B;
+FinSi
+
+Si C > D alors
+ E<—— C - D ;
+sinon 
+   si D > C alors
+      E<—— D - C ;
+   sinon
+    pgcd <—— D;
+   FinSi
+FinSi
+
+Si D<>0 et C<>0 alors
+  Tanque E<>0 faire
+    pgcd<—— E
+   Si E=C-D alors
+     Si D>E alors
+      C <—— D;
+       D<—— E;
+        E<—— C-D;
+      sinon
+       C<—— E;
+       E<—— C-D;
+      FinSi
+   sinon
+      Si E=D-C alors
+     Si C>E alors
+      D <—— C;
+       C<—— E;
+        E<—— D-C;
+      sinon
+       D<—— E;
+       E<—— D-C;
+      FinSi
+   Finsi
+ FinTanque
+sinon 
+    Si D=0 et C<>0 alors
+      pgcd<—— C;
+     sinon
+         Si D<>0 et C=0 alors
+            pgcd <—— D;
+           FinSI
+      FinSi
+FinSi
+
+Afficher" Le PGCD des deux entiers",A,"et ",B," est ", pgcd;
+        
+
+Fin------------
+
+
+
+
+
+
+
+
+
+                                      LES TABLEAUX
+
+exo 1
+
+
+Algorithme                       creation_tableau;
+
+
+         Var
+                tab[1:10]: tableau de type réel;
+
+               I:entier;
+
+Début
+
+     Pour i---->1 à 10
+       afficher '' veuillez entrer la moyenne de l'étudiant n°'',i;
+        saisir tab[i];
+     Finpour
+
+Fin.
+
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+
+
+
+
+
+
+
+
+exo 2
+
+
+Algorithme                       edite_tableau;
+
+
+         Var
+                tab[1:10]: tableau de type réel;
+
+               I:entier;
+
+Début
+
+     Pour i---->1 à 10
+       afficher '' la moyenne de l'étudiant n°'',i,'' est '', tab[i];
+     Finpour
+
+Fin.
+
+
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+
+
+
+exo3                             
+
+
+
+Algorithme                       somme_element;
+
+
+         Var
+                tab[1:10]: tableau de type réel;
+
+               I:entier;
+            somme : réel ;
+
+Début
+
+     Pour i---->1 à 10
+       somme<---- somme+ tab[i];
+     Finpour
+    afficher, somme;
+
+Fin.
+
+
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+
+
+
+exo 4
+
+
+Algorithme                      minimum_element;
+
+
+         Var
+                tab[1:10]: tableau de type réel;
+
+               I:entier;
+            min : réel ;
+
+Début
+   min<---- tab[1];
+
+     Pour i---->1 à 10
+         si tab[i]<min alors
+       min<---- tab[i];
+         Finsi
+     Finpour
+    afficher''le minimum est '',min;
+
+Fin.
+
+
+
+
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+
+
+
+
+exo 5
+
+
+Algorithme                     recherche_element;
+
+
+         Var
+                tab[1:20]: tableau de type chaînes de caractères;
+
+               I:entier;
+            nom: chaînes de caractères ;
+
+Début
+      afficher'' veuillez entrer le nom à rechercher'';
+      saisir nom;
+
+    repeter
+     i<--- i+1
+    tab[i] ;
+    jusqu'à i=20 ou tab[i]=nom
+
+si tab[i]=nom alors
+  afficher'' nom trouvé'';
+  sinon
+    afficher'' nom introuvable'' ;
+  finsi
+
+Fin.
+
+
+
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+
+
+
+exo 6
+
+
+Algorithme                         occurrence_element;
+
+
+         Var
+                tab[1:50]: tableau de type chaînes de caractères;
+
+               t,i:entier;
+            nom: chaînes de caractères ;
+
+Début
+      afficher'' veuillez entrer le nom à rechercher'';
+      saisir nom;
+
+    repeter
+     i<--- i+1
+    tab[i] ; 
+    si tab[i]=nom alors
+           occurrence<--- occurrence+1;
+      finsi
+    jusqu'à i=50
+
+si occurrence > 0 alors
+  afficher'' nom trouvé'', occurence,''fois'';
+  sinon
+    afficher'' nom introuvable'' ;
+  finsi
+
+Fin.
+
+
+
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+
+
+exo7
+
+
+
+Algorithme                    mise_a_jour;
+
+
+         Var
+                tab[1:10]: tableau de type chaînes de caractères;
+
+               i,s:entier;
+            nom: chaînes de caractères ;
+
+Début
+      afficher'' veuillez entrer l'indice du partant'';
+      saisir s;
+      si s>0 et s<10 alors
+    repeter
+     i<--- i+1
+    tab[i] <--- tab[i]+1;
+    jusqu'à i=9
+       tab[10]=nul;
+   sinon
+        si s=10 alors
+          tab[s]=nul;
+        sinon        
+             afficher''indice  introuvable'' ;
+         finsi
+   finisi
+
+Fin.
+
+
+
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+
+
+
+
+exo 8
+
+
+
+
+Algorithme                      somme_tableau;
+
+
+         Var
+                tab1[1:5], tab2[1:5],tab3[1:5]: tableaux                     de type réel;
+
+               I:entier;
+
+Début
+
+     Pour i---->1 à 5
+       tab3[i]<---tab2[i]+tab1[i];
+     Finpour
+
+Fin.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                 -----------                                                                               
+
+
+
+
+
+
+
+
+ 
