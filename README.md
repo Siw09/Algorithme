@@ -1,1 +1,1 @@
-# Algorithme
+Ici vous  n'allez trouver que des entrainement algorithmique  don les cours peuvent les accompagner ou non . si vous avez des cours ou de quoi que ce soit pour votre comprehenssion ou votre apprentissage des algorithmes veuillez me contacter via Gmail sanoussiwassiou09@gmail.com . Merci !
